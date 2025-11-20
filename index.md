@@ -8,7 +8,10 @@
 layout: default
 ---
 
-<script>
+<div style="display:none;">
+<script src="/hansoochang/assets/tabs.js" defer></script>
+</div>
+
 // Tab functionality for CV sections
 (function() {
   'use strict';
