@@ -7,3 +7,5 @@
 #
 layout: default
 ---
+
+<script src="{{ '/assets/tabs.js' | relative_url }}" defer></script>
