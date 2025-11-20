@@ -1,0 +1,26 @@
+<script>
+// Auto-load tabs script - this ensures tabs functionality is always available
+(function() {
+  // Only load if not already loaded
+  if (document.querySelector('script[data-tabs-loaded]')) {
+    return;
+  }
+  
+  var script = document.createElement('script');
+  script.src = '{{ "/assets/tabs.js" | relative_url }}';
+  script.defer = true;
+  script.setAttribute('data-tabs-loaded', 'true');
+  
+  // Try to add to head, fallback to body
+  if (document.head) {
+    document.head.appendChild(script);
+  } else if (document.body) {
+    document.body.appendChild(script);
+  } else {
+    // Wait for DOM
+    document.addEventListener('DOMContentLoaded', function() {
+      (document.head || document.body).appendChild(script);
+    });
+  }
+})();
+</script>

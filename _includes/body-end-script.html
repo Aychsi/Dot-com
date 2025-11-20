@@ -1,0 +1,33 @@
+<script>
+// Auto-load tabs.js - this ensures tabs functionality loads automatically
+(function() {
+  'use strict';
+  // Prevent double loading
+  if (window.__tabsLoaderExecuted) return;
+  window.__tabsLoaderExecuted = true;
+  
+  function loadTabsScript() {
+    var script = document.createElement('script');
+    script.src = '{{ "/assets/tabs.js" | relative_url }}';
+    script.defer = true;
+    script.setAttribute('data-tabs-loaded', 'true');
+    
+    var target = document.head || document.body;
+    if (target) {
+      target.appendChild(script);
+    } else {
+      document.addEventListener('DOMContentLoaded', function() {
+        (document.head || document.body).appendChild(script);
+      });
+    }
+  }
+  
+  // Load immediately if DOM is ready, otherwise wait
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadTabsScript);
+  } else {
+    loadTabsScript();
+  }
+})();
+</script>
+

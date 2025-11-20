@@ -1,0 +1,11 @@
+<script>
+// Auto-load tabs script - injected via head-custom include
+(function() {
+  if (document.querySelector('script[data-tabs-loaded]')) return;
+  var script = document.createElement('script');
+  script.src = '{{ "/assets/tabs.js" | relative_url }}';
+  script.defer = true;
+  script.setAttribute('data-tabs-loaded', 'true');
+  (document.head || document.body).appendChild(script);
+})();
+</script>

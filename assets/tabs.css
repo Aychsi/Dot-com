@@ -1,9 +1,3 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
-
-@import 'modern-resume-theme';
-
 /* Tab Navigation Styles - Top Navigation Bar */
 .main-nav-tabs {
   position: sticky;
@@ -73,6 +67,7 @@
   background: #2a2a2a;
 }
 
+/* Hide sections that are in tabs by default */
 .section-in-tabs {
   display: none;
 }
@@ -93,10 +88,12 @@
   }
 }
 
+/* Always show About Me section */
 #about-me {
   display: block !important;
 }
 
+/* Print styles - show all sections in print */
 @media print {
   .main-nav-tabs,
   .tabs-nav {
@@ -107,16 +104,3 @@
     display: block !important;
   }
 }
-
-/* Inject tabs script via CSS content (fallback method) */
-body::after {
-  content: '';
-  display: none;
-}
-
-/* Alternative: Use a data attribute to trigger script loading */
-body[data-tabs-enabled="true"]::before {
-  content: '';
-  display: none;
-}
-

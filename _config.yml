@@ -74,9 +74,9 @@ content:
         sub_title: Business and Data Analytics Intern
         description: | 
           As a PhD intern at Merck, I led a team of four data scientists and business analysts to develop a comprehensive data table for machine learning cluster analysis, 
-          specifically to foracast a new LDL-C drug. This project involved analyzing patient claims, financial, and biomarker data from 99 million patients 
-          using Spark SQL, R, and Python. I presented our analytics to the internal VP, where I recommended targeted marketing strategies for the drug’s upcoming 
-          launch in both the US and global markets. Additionally, I collaborated with consultants from Accenture and McKinsey & Company to present our fincial forecasts to top stakeholders.
+          specifically to forecast a new LDL-C drug. This project involved analyzing patient claims, financial, and biomarker data from 99 million patients 
+          using Spark SQL, R, and Python. I presented our analytics to the internal VP, where I recommended targeted marketing strategies for the drug's upcoming 
+          launch in both the US and global markets. Additionally, I collaborated with consultants from Accenture and McKinsey & Company to present our financial forecasts to top stakeholders.
 
       - layout: top-middle
         title: Delve Inc.
@@ -203,6 +203,39 @@ content:
             I then designed an algorithm to calculate the most optimal betting strategy based on game-state. 
             Utilized to beat friends at the game.  
 
+  - title: Finance Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Dot-com vs AI Bubble Comparative Analysis
+        link: https://github.com/Aychsi/Dot-com
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: https://github.com/Aychsi/Dot-com
+        description: | # this will include new lines to allow paragraphs
+          Conducted a comprehensive comparative analysis between the Dot-com bubble era (1998-2002) and the current AI bubble (2022-present) 
+          using Python and financial data APIs. Analyzed stock performance, volatility, maximum drawdowns, and market capitalization metrics 
+          for representative companies from both eras. The analysis revealed that while the AI era shows higher average returns (279% vs 186%), 
+          it also demonstrates lower volatility (51% vs 67%) and less severe drawdowns compared to the Dot-com bubble. This project utilized 
+          statistical methods including normalized price trajectories, rolling volatility calculations, and comparative risk-return analysis to 
+          identify key differences between the two market periods.
+
+      - layout: top-middle
+        title: Pharma and Tech Sector Equity Research
+        link: https://github.com/Aychsi/PharmaTech/tree/main
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: https://github.com/Aychsi/PharmaTech/tree/main
+        description: | # this will include new lines to allow paragraphs
+          Developed a comprehensive equity research framework analyzing 20 companies across pharmaceutical and technology sectors. The project 
+          implements multiple valuation methodologies including Comparable Company Analysis (Comps), Residual Income Model (RIM), and scenario-based 
+          valuations. Utilized CAPM and Fama-French three-factor models to calculate expected returns, alpha, beta, and Sharpe ratios. Created 
+          profitability and capital efficiency metrics including ROE, ROA, ROIC, and EBITDA margins. Built a portfolio stress testing dashboard 
+          that evaluates portfolio performance under various scenarios including interest rate shocks and earnings surprises. The analysis generated 
+          price targets, identified investment opportunities, and exported comprehensive reports to Excel for further analysis. This project demonstrates 
+          proficiency in financial modeling, statistical analysis, and portfolio risk management.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
@@ -269,3 +302,5 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+ - tabs_injector
+ - tabs_injector
