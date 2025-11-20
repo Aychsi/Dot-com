@@ -240,11 +240,11 @@ content:
 
       - layout: top-middle
         title: NU Holdings Equity Research Report
-        link: /hansoochang/files/NU_Equity_Research_Report.pdf
+        link: /hansoochang/NU_Equity_Research_Report.pdf
         additional_links:
           - title: View PDF Report
             icon: fas fa-file-pdf
-            url: /hansoochang/files/NU_Equity_Research_Report.pdf
+            url: /hansoochang/NU_Equity_Research_Report.pdf
         description: | # this will include new lines to allow paragraphs
           Comprehensive equity research report on Nu Holdings Ltd. (NYSE: NU), a leading digital-first neobank in Latin America. The analysis includes 
           detailed financial analysis with 12-month price performance charts, valuation analysis using DCF, comparable company analysis, and sum-of-the-parts 
