@@ -250,6 +250,23 @@ content:
           risk assessment including macro/FX exposure, credit risk, regulatory considerations, and competitive dynamics in the Latin American financial 
           services market.
 
+      - layout: top-middle
+        title: Eli Lilly Equity Research Report
+        link: https://aychsi.github.io/hansoochang/LLY_Equity_Research_Report.pdf
+        additional_links:
+          - title: View PDF Report
+            icon: fas fa-file-pdf
+            url: https://aychsi.github.io/hansoochang/LLY_Equity_Research_Report.pdf
+        description: | # this will include new lines to allow paragraphs
+          Comprehensive equity research report on Eli Lilly and Company (NYSE: LLY), analyzing why the pharmaceutical sector represents a compelling 
+          investment opportunity and why LLY stands out as the best-in-class pharma stock. The report begins with a sector thesis covering demographic trends, 
+          defensive characteristics, technological advances, and structural advantages. The analysis then focuses on LLY's exceptional growth profile (~32% 
+          revenue growth, >100% EPS growth), structural leadership in GLP-1 obesity/diabetes treatments (Mounjaro/Zepbound), and best-in-class profitability 
+          metrics (ROE ~85%, profit margins ~22%). The report includes detailed competitive analysis versus peers (Novo Nordisk, Merck, J&J, AbbVie, Pfizer), 
+          valuation analysis with a $1,200 target price, comprehensive risk assessment including valuation risk, payer pressure, and competitive dynamics, and 
+          investment recommendation for long-term growth investors. The analysis demonstrates LLY's superior efficacy in GLP-1 treatments, diversified pipeline 
+          beyond GLP-1, and multi-decade structural tailwind in obesity/diabetes care.
+
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
