@@ -572,7 +572,7 @@ def generate_report():
         "superior weight loss (up to 22.5% body weight reduction) and glucose control versus semaglutide."
     )
     pdf.footnote("Sources: SURMOUNT-1 (NCT04184622), SURPASS-2 (NCT03987919) - NEJM publications")
-    pdf.ln(3)
+    pdf.ln(2)
     pdf.body_text(
         "Tirzepatide's dual mechanism (GLP-1 and GIP receptor agonism) differentiates it from semaglutide. U.S. "
         "prescription data from IQVIA suggests LLY is gaining market share, though Novo Nordisk maintains first-mover "
@@ -581,7 +581,7 @@ def generate_report():
     )
     pdf.footnote("Sources: IQVIA prescription data, company filings, FDA/EMA approvals")
     
-    pdf.ln(3)
+    pdf.ln(2)
     pdf.subsection_title('GLP-1 Market: Capacity, Supply/Demand, and Payor Dynamics')
     pdf.body_text(
         "Manufacturing capacity represents a key constraint. Both LLY and NVO are capacity-constrained for injectable "
@@ -590,7 +590,7 @@ def generate_report():
         "online in 2026-2027. Current supply/demand imbalance supports pricing power but may limit volume growth."
     )
     pdf.footnote("Sources: Company capital allocation guidance, manufacturing facility announcements")
-    pdf.ln(3)
+    pdf.ln(2)
     pdf.body_text(
         "Payor coverage remains a key variable. Medicare coverage for obesity drugs is limited, though some commercial "
         "plans cover GLP-1s with prior authorization. Payor exclusions and step therapy requirements may impact "
@@ -599,7 +599,7 @@ def generate_report():
         "LLY CVOT may support broader coverage."
     )
     pdf.footnote("Sources: CMS coverage policies, commercial payor formularies, SELECT trial (NEJM 2023)")
-    pdf.ln(3)
+    pdf.ln(2)
     pdf.body_text(
         "Cardiovascular outcomes: SELECT trial demonstrated 20% reduction in major adverse cardiovascular events (MACE) "
         "for semaglutide in patients with established cardiovascular disease. LLY's SURMOUNT-MMO trial (tirzepatide "
@@ -607,7 +607,7 @@ def generate_report():
         "cardiovascular risk reduction, significantly increasing TAM."
     )
     pdf.footnote("Sources: SELECT trial (NEJM 2023), SURMOUNT-MMO (NCT05556512)")
-    pdf.ln(3)
+    pdf.ln(2)
     pdf.body_text(
         "Oral GLP-1 formulations represent a critical growth driver addressing patient adherence challenges. While "
         "injectable GLP-1s dominate the current market, real-world adherence to injectable formulations has been "
@@ -618,7 +618,7 @@ def generate_report():
         "and compliance."
     )
     pdf.footnote("Sources: Real-world adherence studies, FDA approvals, commercial insurance claims data")
-    pdf.ln(3)
+    pdf.ln(2)
     pdf.body_text(
         "Eli Lilly is developing orforglipron, an oral GLP-1/GIP receptor agonist currently in Phase 3 trials. "
         "Phase 2 data published in the New England Journal of Medicine demonstrated significant weight loss and "
@@ -632,18 +632,23 @@ def generate_report():
     # Financial Analysis
     pdf.add_page()
     pdf.section_title('FINANCIAL ANALYSIS')
+    pdf.ln(2)
     
     if lly_hist is not None:
         pdf.subsection_title('Price Performance Chart')
-        pdf.ln(3)
+        pdf.ln(2)
         chart_path = create_price_chart(lly_hist)
         chart_y = pdf.get_y()
+        # Check if we have enough space for the chart (60 units height)
+        if chart_y + 60 > 280:  # If chart would go past page, start new page
+            pdf.add_page()
+            chart_y = pdf.get_y()
         pdf.image(chart_path, x=15, y=chart_y, w=180, h=0)
         pdf.set_y(chart_y + 60)
-        pdf.ln(5)
+        pdf.ln(3)
     
     pdf.subsection_title('Historical Financial Metrics (TTM)')
-    pdf.ln(5)
+    pdf.ln(3)
     
     table_width = 170
     table_start_x = (210 - table_width) / 2
