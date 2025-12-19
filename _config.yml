@@ -1,0 +1,355 @@
+# Site
+repository: aychsi/hansoochang
+baseurl: /hansoochang
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Hansoo Chang
+title: PhD Researcher in Applied Cognitive and Brain Sciences
+email: hnsoo.chang@gmail.com
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+github_username:  aychsi
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# flickr_username: jekyll
+linkedin_username: hansoo-chang-948b2214a
+# xing_username: jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/IMG_7975.jpg
+about_content: | # this will include new lines to allow paragraphs
+  I am a PhD researcher at Drexel University using statistical and machine learning techniques to predict mental health and mortality
+  outcomes in large datasets. Previously, I completed my undergraduate degree in Cognitive Science at the University of Pennsylvania with a concentration in Computation and 
+  Cognition where I also used machine learning and natural language processing techniques for analyzing customer feedback on medical and consumer products. 
+
+  My research interests lie in the predictive ability of Biological and Brain age which can be calculated using blood-based and brain imaging data. 
+  I answer these questions using tools such as multilevel linear regression frameworks, neural nets, Bayesian network analysis, and natural
+  language processing.
+
+  I also have experience in providing product improvements and financial forecasting for pharmaceutical and technology leaders backed by data analytics. These insights have been used by business
+  leaders at companies like Merck, Samsung, Dexcom, and Janssen Pharmaceuticals to provide effective product and drug launch.
+
+  I am most skilled in: <mark>R</mark> and <mark>Python</mark>
+
+content:
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Drexel University
+        caption: 2021 - Present
+        sub_title: PhD in Applied Cognitive and Brain Sciences
+
+      - layout: top-middle
+        title: University of Pennsylvania
+        caption: 2017 - 2021
+        sub_title: BA in Cognitive Science
+
+# Work Experience
+  - title: Work Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Merck & Co., Inc.
+        caption: June 2024 - December 2024
+        sub_title: Human Health Digital Data Analytics Intern
+        description: | 
+          Applied Machine Learning Clustering to support launch strategy for a novel LDL-C lowering drug using HER data. Led a team of four data scientists and business analysts 
+          to develop a comprehensive data table for machine learning cluster analysis, analyzing patient claims, financial, and biomarker data from 99 million patients 
+          using Spark SQL, R, and Python. Presented analytics to internal VP, recommending targeted marketing strategies for the drug's upcoming launch in both the US and global markets. 
+          Collaborated with consultants from Accenture and McKinsey & Company to present financial forecasts to top stakeholders.
+
+      - layout: top-middle
+        title: Delve Inc. (formerly Bresslergroup)
+        caption: August 2021 - December 2021
+        sub_title: Quantitative Research Intern
+        description: | 
+          Analyzed customer survey and usability data with text-scraping and regression methods to optimize consumer electronics (Samsung Z-Fold hinge) and medical 
+          devices (Dexcom CGM), ensuring FDA-aligned safety and usability. Designed and implemented a Natural Language Processing Customer Review Analyzer for Dexcom's 
+          continuous glucose monitor, using tools like BeautifulSoup and Docker, to investigate the underlying reasons for customer satisfaction and dissatisfaction.
+
+# PHACS/AMP
+  - title: Selected Projects and Research # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Spatial and Temporal Modeling of Brain and Biological Aging Trajectories
+        link: github.com/Aychsi/PHACS-AMP.git
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: github.com/Aychsi/PHACS-AMP.git
+        quote: >
+          Data from UK Biobank, MIDUS, ABCD, and PHACS studies
+        description: | # this will include new lines to allow paragraphs
+          Developed a unified framework integrating multimodal MRI, blood-based biomarkers, and longitudinal health data to model brain and biological aging across the lifespan. 
+          Built Conditional Variational Autoencoder (CVAE) and Structural Causal Models (SCM) to predict multimorbidity and quantify individual uncertainty in aging trajectories. 
+          Created joint brain–biological age growth charts in youth (ABCD Study®) linking developmental trajectories to future mental and physical health outcomes. 
+          Designed the Individualized Pace of Aging (IPOA) algorithm, outperforming landmark methods in predicting HIV viral load, multimorbidity, and internalizing symptoms (PHACS). 
+          Contributed to NIH R01 grant proposal on multimorbidity and computational modeling of biological and brain aging, focusing on statistical methods and longitudinal modeling strategy.
+
+      # Multimorbidity
+      - layout: top-middle
+        title: Biological age and brain age in midlife - relationship to multimorbidity and mental health
+        link: www.sciencedirect.com/science/article/abs/pii/S0197458023002117
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            url: www.sciencedirect.com/science/article/abs/pii/S0197458023002117
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Data from the Midlife in the US (MIDUS) Study
+        description: | # this will include new lines to allow paragraphs
+          Developed a statistical model to incorporate both blood-based and grey matter volume to calculate both Biological and Brain Age which is used to predict multimorbidity. 
+          This is the first paper to examine both biological and brain age as a predictor for multimorbidity.
+      
+      # CBT
+      - layout: top-middle
+        title: Natural Language Processing and Binge Eating Prediction for Smartwatch Software
+        link: https://github.com/Aychsi/NLP_BingeEating
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: https://github.com/Aychsi/NLP_BingeEating
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Modus Create LLC is a consulting and product development firm
+        description: | # this will include new lines to allow paragraphs
+          I worked as a consultant with the Center for Weight, Eating and Lifestyle Science (WELL) Center at Drexel and Modus Create LLC as a PhD consultant to develop
+          a binge-eating prediction application for smartwatches. I suggested and implemented a personalized Natural Language Processing to detect which foods are more 
+          likely to cause binge-eating episodes. I also used XGBoost to achieve above an 80% sensitivity rate to predict binge-eating episodes based on time of day, 
+          the number of calories in the food, and past episodes.
+  
+      # Delve 
+      - layout: top-middle
+        title: Data Analysis for Product Development at Delve Inc.
+        link: github.com/Aychsi/BG-Data-Analysis.git
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/Aychsi/BG-Data-Analysis.git
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Delve Inc. (formerly Bresslergroup Inc.) is a product innovation firm specializing in consumer and medical devices
+        description: | # this will include new lines to allow paragraphs
+          Various projects as a Data Science Intern at Delve Inc. This includes providing data visualization and summary measures for business leaders from various industries. 
+          Highlights include performing data reduction techniques and survey analysis for Samsung, usability testing for Dexcom's CGM, and Natural Language Processing of Amazon
+          reviews of Batiste (Church and Dwight) dry shampoo.
+
+  - title: Personal Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+        - layout: top-middle
+          title: MLB Wins-Loss Predictor Model
+          link: https://github.com/Aychsi/MLB-Predictor
+          # link_text: Project Website
+          additional_links:
+            - title:  sproogen/modern-resume-theme
+              icon: fab fa-github
+              url: https://github.com/Aychsi/MLB-Predictor
+            # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            #   icon: fab fa-github
+            #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+          description: | # this will include new lines to allow paragraphs
+            Designed a novel wins-loss model for Major League Baseball teams using K-Means clustering and Regression techniques. 
+            Model differed from actual results by 2.687 wins on average, beating most conventional wins-loss predictor algorithms on ESPN.
+
+        - layout: top-middle
+          title: Camel Up Board Game Simulator and Model
+          link: https://github.com/Aychsi/Camel_Up
+          # link_text: Project Website
+          additional_links:
+            - title:  sproogen/modern-resume-theme
+              icon: fab fa-github
+              url: https://github.com/Aychsi/Camel_Up
+            # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            #   icon: fab fa-github
+            #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+          quote: >
+            Camel Up is a board game based on horse-betting
+          description: | # this will include new lines to allow paragraphs
+            I used Python to implement a virtual version of popular board game “Camel Up.” 
+            I then designed an algorithm to calculate the most optimal betting strategy based on game-state. 
+            Utilized to beat friends at the game.  
+
+  - title: Finance Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Dot-com vs AI Bubble Comparative Analysis
+        link: https://github.com/Aychsi/Dot-com
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: https://github.com/Aychsi/Dot-com
+        description: | # this will include new lines to allow paragraphs
+          Conducted a comprehensive comparative analysis between the Dot-com bubble era (1998-2002) and the current AI bubble (2022-present) 
+          using Python and financial data APIs. Analyzed stock performance, volatility, maximum drawdowns, and market capitalization metrics 
+          for representative companies from both eras. The analysis revealed that while the AI era shows higher average returns (279% vs 186%), 
+          it also demonstrates lower volatility (51% vs 67%) and less severe drawdowns compared to the Dot-com bubble. This project utilized 
+          statistical methods including normalized price trajectories, rolling volatility calculations, and comparative risk-return analysis to 
+          identify key differences between the two market periods.
+
+      - layout: top-middle
+        title: Pharma and Tech Sector Equity Research
+        link: https://github.com/Aychsi/PharmaTech/tree/main
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: https://github.com/Aychsi/PharmaTech/tree/main
+        description: | # this will include new lines to allow paragraphs
+          Developed a comprehensive equity research framework analyzing 20 companies across pharmaceutical and technology sectors. The project 
+          implements multiple valuation methodologies including Comparable Company Analysis (Comps), Residual Income Model (RIM), and scenario-based 
+          valuations. Utilized CAPM and Fama-French three-factor models to calculate expected returns, alpha, beta, and Sharpe ratios. Created 
+          profitability and capital efficiency metrics including ROE, ROA, ROIC, and EBITDA margins. Built a portfolio stress testing dashboard 
+          that evaluates portfolio performance under various scenarios including interest rate shocks and earnings surprises. The analysis generated 
+          price targets, identified investment opportunities, and exported comprehensive reports to Excel for further analysis. This project demonstrates 
+          proficiency in financial modeling, statistical analysis, and portfolio risk management.
+
+      - layout: top-middle
+        title: NU Holdings Equity Research Report
+        link: https://aychsi.github.io/hansoochang/NU_Equity_Research_Report.pdf
+        additional_links:
+          - title: View PDF Report
+            icon: fas fa-file-pdf
+            url: https://aychsi.github.io/hansoochang/NU_Equity_Research_Report.pdf
+        description: | # this will include new lines to allow paragraphs
+          Comprehensive equity research report on Nu Holdings Ltd. (NYSE: NU), a leading digital-first neobank in Latin America. The analysis includes 
+          detailed financial analysis with 12-month price performance charts, valuation analysis using DCF, comparable company analysis, and sum-of-the-parts 
+          methodologies. The report provides a BUY rating with a $17.00 target price, representing ~11% upside potential. Key highlights include NU's 
+          rare combination of high growth (603% YoY revenue growth) with solid profitability (11% net margins), trading at a discounted P/E of 6.2x 
+          compared to both traditional banks and fintech peers. The report covers earnings momentum, technical analysis, peer comparisons, and comprehensive 
+          risk assessment including macro/FX exposure, credit risk, regulatory considerations, and competitive dynamics in the Latin American financial 
+          services market.
+
+      - layout: top-middle
+        title: Eli Lilly Equity Research Report
+        link: https://aychsi.github.io/hansoochang/LLY_Equity_Research_Report.pdf
+        additional_links:
+          - title: View PDF Report
+            icon: fas fa-file-pdf
+            url: https://aychsi.github.io/hansoochang/LLY_Equity_Research_Report.pdf
+        description: | # this will include new lines to allow paragraphs
+          Comprehensive equity research report on Eli Lilly and Company (NYSE: LLY), analyzing why the pharmaceutical sector represents a compelling 
+          investment opportunity and why LLY stands out as the best-in-class pharma stock. The report begins with a sector thesis covering demographic trends, 
+          defensive characteristics, technological advances, and structural advantages. The analysis then focuses on LLY's exceptional growth profile (~32% 
+          revenue growth, >100% EPS growth), structural leadership in GLP-1 obesity/diabetes treatments (Mounjaro/Zepbound), and best-in-class profitability 
+          metrics (ROE ~85%, profit margins ~22%). The report includes detailed competitive analysis versus peers (Novo Nordisk, Merck, J&J, AbbVie, Pfizer), 
+          valuation analysis with a $1,200 target price, comprehensive risk assessment including valuation risk, payer pressure, and competitive dynamics, and 
+          investment recommendation for long-term growth investors. The analysis demonstrates LLY's superior efficacy in GLP-1 treatments, diversified pipeline 
+          beyond GLP-1, and multi-decade structural tailwind in obesity/diabetes care.
+
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Chang, H., Widjaja R., Yang A., Kounios J., Kucyi A., Friedman E., Gou J., Ferariu A., Zhang F. (in preparation). Spatial and Temporal Brain and Biological Aging Trajectories and Their Impact on Physical and Mental Health Outcomes.
+      - layout: top-middle
+        title: Chang, H., Kumar, A., Suh J., Street K., Ferariu A., Taylor A., Wang L., Patel K., Brummel B., Williams P., Zhang F. (in preparation). Investigating pace of biological aging as a mental and physical health biomarker in youth with perinatally-acquired HIV.
+      - layout: top-middle
+        title: Chang, H., Street, K., Ferariu, A., Taylor, A., Kounios, J., Friedman, E., McMillan, C., & Zhang, F. (2024). Investigating brain and biological development in children and their relationship with physical, mental, and academic outcomes. Journal of Child Psychology and Psychiatry (under review).
+        link: https://doi.org/10.1101/2024.10.07.617114
+      - layout: top-middle
+        title: Ferariu, A., Chang, H., Kumar, A., Sahl, A., Gorka, S., Wang, L., Thompson, W. K., & Zhang, F. (2025). Integrating multilevel, multidomain and multimodal neuroimaging factors to predict early alcohol exposure trajectories using explainable AI. bioRxiv.
+        link: https://doi.org/10.1101/2025.03.12.25323356
+      - layout: top-middle
+        title: "Ferariu, A., Chang, H., Taylor, A., & Zhang, F. (2024). Alcohol sipping patterns, personality, and psychopathology in Children: Moderating effects of dorsal anterior cingulate cortex (dACC) activation. Alcohol, clinical & experimental research, 48(8), 1492–1506."
+        link: https://doi.org/10.1111/acer.15393
+      - layout: top-middle
+        title: "Shim, M., Kavanaugh, M., Lacson, C., Goldstein-Levitas, N., Chang, H., Zhang, F., Palekar, N., Gonzalez, A., & Fisher, K. (2024). Connected through movement: a feasibility study of online mindfulness-based dance/movement therapy for older adults with age-related cognitive decline during COVID-19. Aging & mental health, 28(12), 1676–1685."
+        link: https://doi.org/10.1080/13607863.2024.2364754
+      - layout: top-middle
+        title: "Zhang, F., Chang, H., Schaefer, S. M., & Gou, J. (2023). Biological age and brain age in midlife: relationship to multimorbidity and mental health. Neurobiology of Aging, 132, 145-153."
+        link: https://www.sciencedirect.com/science/article/abs/pii/S0197458023002117?via%3Dihub
+      - layout: top-middle
+        title: Niu, X., Gou, J., Chang, H., Lowe, M., & Zhang, F. (2022). Classification model with weighted regularization to improve the reproducibility of neuroimaging signature selection. Statistics in Medicine, 41(25), 5046-5060.
+        link: https://onlinelibrary.wiley.com/doi/10.1002/sim.9553
+  - title: Presentations # Title for the section
+    layout: list # Type of content section (list/text)
+    content: 
+      - layout: top-middle
+        title: Investigating pace of biological aging as a mental and physical health biomarker in youth with perinatally-acquired HIV
+        quote: >
+          ACM-BCB 2025
+        description: | # this will include new lines to allow paragraphs
+          Poster presented at the 16th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics in Philadelphia, PA
+      - layout: top-middle
+        title: Patient Profiling Using Cluster Analysis for MK-0616
+        quote: >
+          December 2024
+        description: |
+          Industry poster presented at Merck, New York, New York
+      - layout: top-middle
+        title: "A Multi-Modal Neuroimaging Study on the Prediction of Alcohol Sipping Patterns in Children: Results from the ABCD Study"
+        quote: >
+          CCN 2024
+        description: |
+          Abstract presented at CCN 2024, Boston, MA (co-authored with Ferariu, A., Taylor, A., & Zhang, F.)
+      - layout: top-middle
+        title: "Biological age and brain age in midlife: relationship to multimorbidity and mental health"
+        quote: >
+          May 2023
+        description: |
+          Invited 30 minute presentation at the annual Midlife in the US (MIDUS) Investigators Meeting at the University of Wisconsin, Madison
+      - layout: top-middle
+        title: Investigating Biological and Brain Aging as a Mental and Physical Health Biomarker in the Adolescent Brain Cognitive Development (ABCD) study
+        quote: >
+          May 2023
+        description: |
+          Poster presented at the Statistical Methods in Imaging (SMI) Conference, University of Minnesota, Minneapolis, MN
+  - title: Sample Research Poster
+    layout: text
+    content: | 
+      ![Poster](images/SMI_Poster.png "Poster")
+
+  - title: Sample Industry Poster
+    layout: text
+    content: | 
+      ![Poster](images/merck_poster.png "Poster")
+         
+
+
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+ - tabs_injector
+ - tabs_injector
