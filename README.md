@@ -1,14 +1,14 @@
 # Dot-Com vs. AI Bubble: Comparative Analysis
 
-A comprehensive quantitative analysis comparing the Dot-Com bubble era (1998-2002) with the current AI-driven market rally (2022-present) using machine learning and statistical methods.
+I compared the Dot-Com bubble era (1998-2002) with the current AI market rally (2022-present) using machine learning and statistical methods.
 
 ## What I Did
 
-• **Data Collection**: Fetched historical stock data for representative companies from both eras using `yfinance`
+• Data Collection: I pulled historical stock data for representative companies from both eras using yfinance
   - Dot-Com era: Cisco, Intel, Microsoft, Oracle, Amazon, eBay, AT&T
   - AI era: NVIDIA, Microsoft, Apple, Alphabet, Meta, AMD, Tesla, Palantir, SMCI, Broadcom
 
-• **Feature Engineering**: Created 36 machine learning features including:
+• Feature Engineering: I created 36 machine learning features including:
   - Returns (daily, logarithmic)
   - Rolling volatility (30, 60, 90-day windows)
   - Momentum indicators (5, 20, 60-day)
@@ -16,14 +16,14 @@ A comprehensive quantitative analysis comparing the Dot-Com bubble era (1998-200
   - Volume features
   - Market correlation features
 
-• **Machine Learning Models**: Trained and compared multiple models:
+• Machine Learning Models: I trained and compared multiple models:
   - Linear models (Linear Regression, Logistic Regression)
   - Regularized models (Ridge, Lasso, ElasticNet)
   - Dimension reduction (PCA, Factor Analysis)
   - Tree-based models (Random Forest, Gradient Boosting, XGBoost, LightGBM)
   - Neural networks (MLP, LSTM)
 
-• **Performance Analysis**: Calculated and compared key metrics:
+• Performance Analysis: I calculated and compared key metrics:
   - Total returns
   - Volatility (rolling and average)
   - Maximum drawdowns
@@ -33,43 +33,43 @@ A comprehensive quantitative analysis comparing the Dot-Com bubble era (1998-200
 ## Key Results
 
 ### Performance Comparison
-• **Returns**: AI era shows **273% average return** vs Dot-com era **186%** (47% higher)
-• **Volatility**: AI era shows **51% volatility** vs Dot-com era **67%** (24% lower)
-• **Max Drawdown**: AI era shows **-57%** vs Dot-com era **-79%** (28% less severe)
-• **Risk-Adjusted Returns**: AI era shows **5.36x** Sharpe ratio vs Dot-com **2.77x** (93% better)
+• Returns: AI era shows 273% average return vs Dot-com era 186% (47% higher)
+• Volatility: AI era shows 51% volatility vs Dot-com era 67% (24% lower)
+• Max Drawdown: AI era shows -57% vs Dot-com era -79% (28% less severe)
+• Risk-Adjusted Returns: AI era shows 5.36x Sharpe ratio vs Dot-com 2.77x (93% better)
 
 ### Key Findings
-• **Lower volatility** in AI era suggests more institutional participation and fundamental backing
-• **Less severe drawdowns** indicate better risk management and faster recovery potential
-• **Stock selection matters**: Even in bubbles, not all stocks participate equally (Dot-com had losers like Intel -12%)
-• **Selective bubble**: Some AI companies trade at extreme valuations (PLTR: 450x P/E) while others are reasonable (MSFT: 35x P/E)
+• Lower volatility in the AI era suggests more institutional participation and fundamental backing
+• Less severe drawdowns indicate better risk management and faster recovery potential
+• Stock selection matters: Even in bubbles, not all stocks participate equally (Dot-com had losers like Intel at -12%)
+• Selective bubble: Some AI companies trade at extreme valuations (PLTR: 450x P/E) while others are reasonable (MSFT: 35x P/E)
 
 ### Model Performance
-• **Return prediction**: Most models struggle (negative R² = worse than guessing average) - confirms efficient market theory
-• **Bubble classification**: Performs much better (ROC-AUC ~0.99) - identifying bubble conditions is feasible
-• **Most important features**: 5-day moving average, 60-day momentum, day of year, volatility of volatility
+• Return prediction: Most models struggle (negative R² means worse than guessing the average) - this confirms efficient market theory
+• Bubble classification: Performs much better (ROC-AUC around 0.99) - identifying bubble conditions is feasible
+• Most important features: 5-day moving average, 60-day momentum, day of year, volatility of volatility
 
 ### Current AI Valuations
-• **Total market cap**: $21.5 trillion across 10 companies
-• **Concentration risk**: Top 3 companies (NVDA, MSFT, AAPL) = $12.2T (57% of total)
-• **Extreme valuations**: PLTR (450x P/E), TSLA (332x P/E), AMD (112x P/E)
-• **Reasonable valuations**: SMCI (24x), META (29x), MSFT (35x)
+• Total market cap: $21.5 trillion across 10 companies
+• Concentration risk: Top 3 companies (NVDA, MSFT, AAPL) = $12.2T (57% of total)
+• Extreme valuations: PLTR (450x P/E), TSLA (332x P/E), AMD (112x P/E)
+• Reasonable valuations: SMCI (24x), META (29x), MSFT (35x)
 
 ## Investment Implications
 
-✅ **Positive Signs**:
+Positive Signs:
 - Superior risk-adjusted returns
-- Lower volatility suggests more sustainable rally
+- Lower volatility suggests a more sustainable rally
 - Better downside protection
 
-⚠️ **Caution Signs**:
+Caution Signs:
 - Extreme valuations in some names are unsustainable
 - High concentration risk
 - Wide return dispersion (21% to 902%)
 
 ## Files
 
-- `notebook.ipynb`: Complete analysis with all code, visualizations, and findings
+- notebook.ipynb: Complete analysis with all code, visualizations, and findings
 
 ## Technologies Used
 
